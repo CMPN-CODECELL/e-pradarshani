@@ -12,7 +12,7 @@
   // Preloader
    $(window).on('load', function () {
      if ($('#preloader').length) {
-       $('#preloader').delay(100).fadeOut('slow', function () {
+       $('#preloader').delay(10).fadeOut('slow', function () {
          $(this).remove();
        });
      }
@@ -20,7 +20,7 @@
 
   // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 10) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
@@ -35,13 +35,13 @@
 	$('.scrolltop-mf').on("click", function () {
 		$('html, body').animate({
 			scrollTop: 0
-		}, 1000);
+		}, 10);
 	});
 
 	/*--/ Star Counter /--*/
 	$('.counter').counterUp({
 		delay: 15,
-		time: 2000
+		time: 20
 	});
 
 	/*--/ Star Scrolling nav /--*/
@@ -52,7 +52,7 @@
 			if (target.length) {
 				$('html, body').animate({
 					scrollTop: (target.offset().top - navHeight + 5)
-				}, 1000, "easeInOutExpo");
+				}, 10, "easeInOutExpo");
 				return false;
 			}
 		}
@@ -105,7 +105,7 @@
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
 		autoplay: true,
-		autoplayTimeout: 4000,
+		autoplayTimeout: 40,
 		autoplayHoverPause: true,
 		responsive: {
 			0: {
