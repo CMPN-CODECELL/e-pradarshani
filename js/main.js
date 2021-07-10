@@ -27,7 +27,7 @@
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},100, 'easeInOutExpo');
+    $('html, body').animate({scrollTop : 0},1000, 'easeInOutExpo');
     return false;
   });
 
@@ -35,7 +35,7 @@
 	$('.scrolltop-mf').on("click", function () {
 		$('html, body').animate({
 			scrollTop: 0
-		}, 10);
+		}, 1000);
 	});
 
 	/*--/ Star Counter /--*/
