@@ -20,14 +20,14 @@
 
   // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 10) {
+    if ($(this).scrollTop() > 1000) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},10, 'easeInOutExpo');
+    $('html, body').animate({scrollTop : 0},100, 'easeInOutExpo');
     return false;
   });
 
@@ -41,7 +41,7 @@
 	/*--/ Star Counter /--*/
 	$('.counter').counterUp({
 		delay: 15,
-		time: 20
+		time: 200
 	});
 
 	/*--/ Star Scrolling nav /--*/
